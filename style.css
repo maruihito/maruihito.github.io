@@ -1,0 +1,74 @@
+.title {
+	color: #02ccba;
+}
+
+.header {
+	background-color : rgba(255, 255, 255, 0.5) ;
+}
+
+/* 吹き出し */
+.balloon {
+	position: relative;
+	display: inline-block;
+	background-color: rgba(210, 167, 167, 0.9);
+	padding: 10px;
+	color: #333;
+	margin: 15px;
+	}
+	
+	.balloon::before {
+	content: "";
+	position: absolute;
+	border: 12px solid transparent;
+	border-right: 12px solid rgba(210, 167, 167, 0.9);
+	top: 20%;
+	left: -24px;
+	}
+	
+	.balloon p {
+	margin: 0;
+	padding: 0;
+	}
+
+.balloon2 {
+	position: relative;
+	display: inline-block;
+	background-color: rgba(210, 167, 167, 0.9);
+	padding: 10px;
+	color: #333;
+	margin: 15px;
+	}
+	
+	.balloon2::before {
+	content: "";
+	position: absolute;
+	border: 12px solid transparent;
+	border-right: 12px solid rgba(210, 167, 167, 0.9);
+	top: 80%;
+	left: -24px;
+	}
+	
+	.balloon p {
+	margin: 0;
+	padding: 0;
+	}
+
+	.footer {
+		background-color : rgba(255, 255, 255, 0.5) ;
+	}
+
+  body {
+	margin: 0;
+	width: 100vw;
+	height: 120vh;
+	background-image:
+	linear-gradient(140deg, 
+	#00f3ffA0, 
+	#0028b960 20%, 
+	#00f3ff60 80%, 
+	#00f3ffA0), 
+	url(img/bg_hyte.jpg);
+	background-repeat: no-repeat;
+	background-position:50% 50%;
+	background-size:cover;
+  }
